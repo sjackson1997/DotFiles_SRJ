@@ -20,6 +20,9 @@ highlight NonText guifg=#FC4806
 highlight SpecialKey guifg=#FC4806
 "highlight SpecialKey guifg=#4a4a59
 
+" Custom key mappings created by Scott J
+nnoremap <silent> <F5> :w<CR>:!%:p<CR>
+
 " set tabs to have 4 spaces
 set tabstop=4
 set softtabstop=4
