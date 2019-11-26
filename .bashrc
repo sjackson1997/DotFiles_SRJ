@@ -92,6 +92,11 @@ if [ -f /usr/bin/vim ]; then
 	export EDITOR='vim'
 fi
 
+#Export the MOST pager as the man page pager
+if [ -f /usr/bin/most ]; then
+	export PAGER='most'
+fi
+
 
 # some more ls aliases
 alias ll='ls -alF --group-directories-first'
