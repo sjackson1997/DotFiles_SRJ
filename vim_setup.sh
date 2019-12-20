@@ -7,6 +7,7 @@ if [[ ! -h ~/.vimrc ]]; then
 	ln -s ~/git/DotFiles_SRJ/.vimrc ~/.vimrc
 fi
 
+# I am adding this comment for Cyrus' benefit
 
 # Need to install python-dev in order to get headers for cmake to run install.py below
 sudo apt install python-dev python3-dev build-essential cmake -y
