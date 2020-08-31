@@ -117,7 +117,14 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# This is a stupid comment.
+####################################################################################
+# NOTES for useful commands
+
+#	find/return the current set desktop environment (e.g., "GNOME", "Unity", "KDE", etc.)
+#	echo $XDG_CURRENT_DESKTOP
+
+
+
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
