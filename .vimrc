@@ -37,14 +37,31 @@ syntax on
 set nocompatible 
 filetype off
 filetype plugin on
-set rtp+=~/.vim/bundle/Vundle.vim 
-call vundle#begin() 
+"set rtp+=~/.vim/bundle/Vundle.vim 
+"call vundle#begin() 
 " let Vundle manage Vundle required!
-Plugin 'VundleVim/Vundle.vim'
+"Plugin 'VundleVim/Vundle.vim'
+"
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'vimwiki/vimwiki'
+"Plugin 'godlygeek/tabular'
+"Plugin 'plasticboy/vim-markdown'
+"
+"call vundle#end()
 
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'vimwiki/vimwiki'
+"Trying alternate Plugin Manager 'Vim-Plug'
 
-call vundle#end()
+call plug#begin('~/.vim/plugged')
+
+
+Plug 'Valloric/YouCompleteMe'
+Plug 'vimwiki/vimwiki'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
+"Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+
+call plug#end()
 filetype plugin indent on
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
