@@ -104,6 +104,7 @@ alias ll='ls -alF --group-directories-first'
 alias la='ls -A'
 alias l='ls -CF'
 alias lsd='ls -d */'
+alias diff='diff -y --suppress-common-lines'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
